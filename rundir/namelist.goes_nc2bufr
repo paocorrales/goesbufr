@@ -1,8 +1,8 @@
 &data_nml
   nc_list_file = './flist.txt'
-  data_dir = '.', ! path of the GRB nc files
+  data_dir = '../example_obs/', ! path of the GRB nc files
   data_id = 'OR_ABI-L1b-RadF-M3'      ! prefix of the downloaded GRB nc files
   sat_id = 'G16'
-  bufr_tbl_file = '../bufrtab_NC021046.txt'
+  bufr_tbl_file = './bufrtab_NC021046.txt'
   n_subsample = 4  ! stride for reducing the output volume
 /

@@ -8,12 +8,12 @@ filelist=flist.txt
 
 anio=2018
 
-for d in {317..323} 
+for d in {317..317} 
 do
 
 diaj=$d
 
-for h in {0..23} 
+for h in {0..1} 
 do
 
 hora=`printf %2.2i $h`			# Hora de asimilación
@@ -32,10 +32,10 @@ echo '*** copying files ***'
 
 for file in ${files_rad[*]}
 do
-  cp ${file} /home/paola.corrales/goes_16/rundir/
+  cp ${file} /home/paola.corrales/goesbufr/rundir/
 done
 
-cp ${file_mask} /home/paola.corrales/goes_16/rundir/
+cp ${file_mask} /home/paola.corrales/goesbufr/rundir/
 
 echo '*** writing filillist ***'
 
